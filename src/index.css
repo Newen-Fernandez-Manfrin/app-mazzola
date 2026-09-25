@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mazzola-bg: #EAE6DF;
+    --mazzola-surface: #F5F2EC;
+    --mazzola-surface-card: #FAF8F5;
+    --mazzola-border: #D7D2C7;
+    --mazzola-text-main: #24211E;
+    --mazzola-text-muted: #615B54;
+    --mazzola-orange: #EA580C;
+    --mazzola-amber: #F59E0B;
+    --mazzola-accent: #D97706;
+  }
+
+  body {
+    background-color: #EAE6DF;
+    color: #24211E;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom low-contrast workshop styling */
+.bg-mazzola-canvas {
+  background-color: #EAE6DF;
+}
+
+.bg-mazzola-panel {
+  background-color: #F4F1EA;
+}
+
+.bg-mazzola-card {
+  background-color: #FAF8F4;
+}
+
+.border-mazzola {
+  border-color: #D8D2C6;
+}
+
+/* Print styles for Presupuestos Mazzola */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+}
